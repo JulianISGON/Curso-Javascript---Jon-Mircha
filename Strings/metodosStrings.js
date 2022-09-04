@@ -59,5 +59,35 @@ const paragraph2 = 'The quick Brown Fox jumps over the lazy dog. It barked.';
 const regex = /[A-Z]/g; //Encuentra todas las mayusculas
 const found = paragraph2.match(regex);
 
-console.log(found);
+//console.log(found);
 // expected output: Array [ 'T', 'B', 'F', 'I' ]
+
+//9) .replace() método devuelve una nueva cadena con una, algunas o todas las coincidencias de un patternreemplazadas por un replacement. patternpuede ser una cadena o un , RegExpy replacementpuede ser una cadena o una función llamada para cada coincidencia. Si patternes una cadena, solo se reemplazará la primera aparición. La cadena original se deja sin cambios.
+
+let cadenaReplace = 'Javascript es genial'
+
+cadenaReplace = cadenaReplace.replace('Java', 'ECMA')
+//console.log(cadenaReplace)
+
+//10) .slice() método extrae una sección de una cadena y la devuelve como una nueva cadena, sin modificar la cadena original.
+let nameSlice = 'Mi nombre es Julian Isaza, soy desarrollador y me gusta la musica'
+//console.log(nameSlice.slice(0,10))
+//console.log(nameSlice.slice(13,25))
+
+//11) .split() método toma un patrón y lo divide Stringen una lista ordenada de subcadenas buscando el patrón, coloca estas subcadenas en una matriz y devuelve la matriz.
+
+let cadenaSplit = 'Javascript es un lenguaje de programacion'
+let palabras = cadenaSplit.split(' ')
+//console.log(palabras)
+
+//12) .trim() método elimina los espacios en blanco de ambos extremos de una cadena y devuelve una nueva cadena, sin modificar la cadena original. Los espacios en blanco en este contexto son todos los caracteres de espacio en blanco (espacio, tabulador, espacio sin interrupción, etc.) y todos los caracteres de terminación de línea (LF, CR, etc.).
+
+let phraseTrim = '  Hola Mundo!   '
+//console.log(phraseTrim)
+newTrim = phraseTrim.trim()
+//console.log(newTrim)
+
+//13) .valueOf método devuelve el valor primitivo de un Stringobjeto.
+
+const x = 'Hello world'
+console.log(x.valueOf()); // Displays 'Hello world'
